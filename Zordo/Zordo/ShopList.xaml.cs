@@ -16,9 +16,9 @@ namespace Zordo
         ExceptionEmail email = new ExceptionEmail();
         BusinessLogic _business = new BusinessLogic();
         List<Shop> Shops = new List<Shop>();
-        ShopType shopType;
+        Int32 shopType;
         string location = string.Empty;
-        public ShopList(ShopType type, string location)
+        public ShopList(Int32 type, string location)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
@@ -27,13 +27,12 @@ namespace Zordo
             LoadShops();
         }
 
-        public void LoadShops()
+        public async void LoadShops()
         {
             try
             {
-                Shops = _business.GetShopList();
-                if (Shops != null)
-                    listShops.ItemsSource = Shops.Where(s => s.Type == shopType && s.Area == location).ToList();
+                var allShops = await _business.GetAllShopsByTypeAndLocation(shopType,location);
+                listShops.ItemsSource = allShops;
             }
             catch (Exception ex)
             {

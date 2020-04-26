@@ -23,10 +23,10 @@ namespace Zordo
         {
             try
             {
-                ShopType shopTypeID = 0;
+                Int32 shopTypeID = 0;
                 string type = Convert.ToString(pickerType.SelectedItem);
                 //shopTypeID = (type == "Grocery Shop") ? ShopType.GroceryShop : (type == "Medical Shop") ? ShopType.MedicalShop : type == "Vegetables Shop" ? ShopType.VegetablesShop : ShopType.GroceryShop;
-                shopTypeID = (type == "Grocery Shop") ? ShopType.GroceryShop : (type.Contains("Confectionary")) ? ShopType.ConfectionaryShop : ShopType.GroceryShop;
+                shopTypeID = (type == "Grocery Shop") ? 1 : (type.Contains("Confectionary")) ? 0 : 1;
                 string location = Convert.ToString(pickerLocation.SelectedItem);
                 if (!string.IsNullOrWhiteSpace(location))
                 {

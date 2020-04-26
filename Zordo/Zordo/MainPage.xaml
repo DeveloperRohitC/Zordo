@@ -9,7 +9,7 @@
     <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <StackLayout>
             <Image Source="logo.png" HeightRequest="350" WidthRequest="350" 
-               FlexLayout.AlignSelf="Center" Margin="0,30,0,0"/>
+               FlexLayout.AlignSelf="Center" Margin="0,30,0,0" />
 
             <Label Text="Welcome to Zordo!" 
            HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"

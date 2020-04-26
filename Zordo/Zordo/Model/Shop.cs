@@ -15,7 +15,7 @@ namespace Zordo
     {
         public int Id { get; set; }
         public string ShopName { get; set; }
-        public ShopType Type { get; set; }
+        public int Type { get; set; }
         public string Landmark { get; set; }
         public string Address { get; set; }
         public string Area { get; set; }
