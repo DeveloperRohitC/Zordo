@@ -15,16 +15,6 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <!--<Picker Title = "Select Market" x:Name="pickerMarket" FontAttributes="Bold" FontSize="24"
-                VerticalOptions = "CenterAndExpand">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Market 1</x:String>
-                        <x:String>Market 2</x:String>
-                        <x:String>Market 3</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>-->
             <Picker Title = "Select Type" x:Name="pickerType" FontAttributes="Bold" FontSize="24"
                 VerticalOptions = "CenterAndExpand">
                 <Picker.ItemsSource>

@@ -57,20 +57,18 @@
                             </ContentView.GestureRecognizers>
                         </ContentView>
                     </Grid>
-
-                    <!--<Label Text="Delivery Charge  ₹ 15.00 /-" 
-                HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
-                VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />-->
-
-                    <Label Text="Order Timing : 2:00 PM - 6:00 PM" 
+                    
+                    <StackLayout>
+                        <Label Text="Order Timing : 2:00 PM - 6:00 PM" 
                 HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
                 VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
 
                     <Label Text="Please don't call unnecessarily." 
                 HorizontalOptions="FillAndExpand" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
                 VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
-
                 </StackLayout>
+
+        </StackLayout>
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

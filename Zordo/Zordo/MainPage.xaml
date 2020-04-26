@@ -8,19 +8,19 @@
 
     <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <StackLayout>
-            <Image Source="logo.png" HeightRequest="200" WidthRequest="200" 
+            <Image Source="logo.png" HeightRequest="350" WidthRequest="350" 
                FlexLayout.AlignSelf="Center" Margin="0,30,0,0"/>
 
             <Label Text="Welcome to Zordo!" 
            HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"
            VerticalOptions="StartAndExpand" Margin="0,20,0,20" BackgroundColor="Beige"
-               Padding="10,0,10,0" FontSize="24" />
+               Padding="30,0,30,0" FontSize="30" />
 
             <Image Source="freeDeli.png" HeightRequest="150" WidthRequest="150" 
                FlexLayout.AlignSelf="Center" Margin="0,0,0,0"/>
 
             <Button Text="Click to Order items !"
-                HorizontalOptions="Center" Margin="0,0,0,20"
+                HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"
                 VerticalOptions="EndAndExpand" FontAttributes="Bold" FontSize="22"
                 x:Name="btnOrder" WidthRequest="300"
                 Clicked="btnOrder_Clicked" BackgroundColor="#649eff" TextColor="FloralWhite"
