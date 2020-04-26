@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zordo.Android", "Zordo\Zordo.Android\Zordo.Android.csproj", "{D470D9DB-B9D3-4A57-8E90-62C55B96827A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zordo", "Zordo\Zordo\Zordo.csproj", "{6F25A522-A5EE-4EAC-8BFD-51C2C0B4CD19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D470D9DB-B9D3-4A57-8E90-62C55B96827A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F25A522-A5EE-4EAC-8BFD-51C2C0B4CD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F25A522-A5EE-4EAC-8BFD-51C2C0B4CD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F25A522-A5EE-4EAC-8BFD-51C2C0B4CD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F25A522-A5EE-4EAC-8BFD-51C2C0B4CD19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5DA8DFA-1CE4-45AA-AC64-9F11EA885575}
+	EndGlobalSection
+EndGlobal

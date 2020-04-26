@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="WhiteSmoke"
+             x:Class="Zordo.ShopList">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ListView x:Name="listShops" ItemTapped="listShops_ItemTapped"
+                   HasUnevenRows="true"
+                   SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" BackgroundColor="WhiteSmoke" Margin="0,0,0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image HeightRequest="100"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   Aspect="AspectFill"
+                                   WidthRequest="100"
+                                   Grid.RowSpan="3"
+                                   Source="{Binding Image}"/>
+                                <Label Grid.Column="1" FontAttributes="Bold" TextColor="Black" FontSize="26"
+                                   Text="{Binding ShopName}" VerticalOptions="End" LineBreakMode="TailTruncation"/>
+
+                                <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   VerticalOptions="Start"
+                                   Text="{Binding MinOrder}" FontSize="18"/>
+                                <Label Grid.Column="1"
+                                   Grid.Row="2"
+                                   VerticalOptions="Start"
+                                   Text="Rating : 4.5 / 5" FontSize="18"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

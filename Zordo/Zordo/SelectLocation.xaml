@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="WhiteSmoke"
+             x:Class="Zordo.SelectLocation">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker Title = "Select Location" x:Name="pickerLocation" FontAttributes="Bold" FontSize="24"
+                VerticalOptions = "CenterAndExpand">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Pilibhit City</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <!--<Picker Title = "Select Market" x:Name="pickerMarket" FontAttributes="Bold" FontSize="24"
+                VerticalOptions = "CenterAndExpand">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Market 1</x:String>
+                        <x:String>Market 2</x:String>
+                        <x:String>Market 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>-->
+            <Picker Title = "Select Type" x:Name="pickerType" FontAttributes="Bold" FontSize="24"
+                VerticalOptions = "CenterAndExpand">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Grocery Shop (किराने की दुकान)</x:String>
+                        <x:String>Confectionary Shop</x:String>
+                        <!--<x:String>Medical + Sanitizer + Mask</x:String>-->
+                        <!--<x:String>Vegetables Shop</x:String>-->
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Note : Please mention your complete address on slip for Whatsapp!" 
+           HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10"
+           VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="22" />
+
+            <Label Text="Min Order  ₹ 200.00 /- [For Grocery]" 
+           HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,-20,10,0" Padding="10" 
+           VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
+
+            <Label Text="Min Order  ₹ 100.00 /- [For Confectionary]" 
+           HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,-20,10,0" Padding="10" 
+           VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
+
+            <Button Text="Get Shop"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                x:Name="GetShop"
+                Clicked="btnGetShop_Clicked"  FontAttributes="Bold" FontSize="22"
+                BackgroundColor="#649eff" TextColor="FloralWhite" WidthRequest="300"
+                ></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

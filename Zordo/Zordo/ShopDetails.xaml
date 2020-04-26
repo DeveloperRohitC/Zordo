@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="WhiteSmoke"
+             x:Class="Zordo.ShopDetails">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Spacing="20" Padding="15">
+                    <Label Text="Shop Name:" FontAttributes="Bold" TextColor="Black" FontSize="28"/>
+                    <Label Text="{Binding ShopName}" FontSize="28"/>
+
+                    <Label Text="Address:" FontAttributes="Bold" TextColor="Black" FontSize="28"/>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding Landmark}" FontSize="28" />
+                                <Span Text=", "></Span>
+                                <Span Text="{Binding Address}" FontSize="28"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Text="Mobile No:" FontAttributes="Bold" TextColor="Black" FontSize="28"/>
+                    <Grid>
+                        <ContentView HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                            <Label Text="{Binding Mobile1}" Grid.Row="0" Grid.Column="0" FontSize="28" FontAttributes="Bold" TextColor="Blue"  TextDecorations="Underline"/>
+                            <ContentView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </ContentView.GestureRecognizers>
+                        </ContentView>
+                        <ContentView HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1">
+                            <Image Source="whatsapp.png" Grid.Row="0" Grid.Column="1" IsVisible="{Binding IsWhatsApp1}" HeightRequest="40" WidthRequest="80" />
+                            <ContentView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                            </ContentView.GestureRecognizers>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid>
+                        <ContentView HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                            <Label Text="{Binding Mobile2}" Grid.Row="0" Grid.Column="0" FontSize="28" FontAttributes="Bold" TextColor="Blue"  TextDecorations="Underline"/>
+                            <ContentView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </ContentView.GestureRecognizers>
+                        </ContentView>
+                        <ContentView HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1">
+                            <Image Source="whatsapp.png" Grid.Row="0" Grid.Column="1" IsVisible="{Binding IsWhatsApp2}" HeightRequest="40" WidthRequest="80" />
+                            <ContentView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                            </ContentView.GestureRecognizers>
+                        </ContentView>
+                    </Grid>
+
+                    <!--<Label Text="Delivery Charge  ₹ 15.00 /-" 
+                HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
+                VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />-->
+
+                    <Label Text="Order Timing : 2:00 PM - 6:00 PM" 
+                HorizontalOptions="Fill" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
+                VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
+
+                    <Label Text="Please don't call unnecessarily." 
+                HorizontalOptions="FillAndExpand" TextColor="Red" FontAttributes="Bold" Margin="10,0,10,0" Padding="10" 
+                VerticalOptions="StartAndExpand" BackgroundColor="Beige" FontSize="18" />
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
