@@ -37,7 +37,7 @@ namespace Zordo
             try
             {
                 var uriString = "whatsapp://send?phone=91" + _shop.Mobile1;
-                uriString += "&text=" + "Order via Delivery@Door : ";
+                uriString += "&text=" + "Order via Zordo : ";
                 Launcher.OpenAsync(new Uri(uriString));
             }
             catch (Exception ex)
@@ -52,7 +52,7 @@ namespace Zordo
             try
             {
                 var uriString = "whatsapp://send?phone=91" + _shop.Mobile2;
-                uriString += "&text=" + "Order via Delivery@Door : ";
+                uriString += "&text=" + "Order via Zordo : ";
                 Launcher.OpenAsync(new Uri(uriString));
             }
             catch (Exception ex)
